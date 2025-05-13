@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syaza's Surprise Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Hey Syaza! Let's play a quiz together!</h1>
+    <div id="quiz">
+      <p>Question 1: What is your favorite color?</p>
+      <button onclick="nextQuestion('Red')">Red</button>
+      <button onclick="nextQuestion('Blue')">Blue</button>
+      <button onclick="nextQuestion('Green')">Green</button>
+      <button onclick="nextQuestion('Purple')">Purple</button>
+    </div>
+    <div id="result" class="hidden">
+      <h2>Congratulations, you've completed the quiz!</h2>
+      <p>Click the button below for a sweet surprise!</p>
+      <button id="finishButton" onclick="showSurprise()">Click Me!</button>
+    </div>
+    <div id="surpriseMessage" class="hidden">
+      <p>Sweetheart, you're my everything. I love you so much, Syaza! 💖</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

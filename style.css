@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 2s;
+}
+
+.quiz-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  color: #ff4081;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+.hidden {
+  display: none;
+}
+
+#surpriseMessage {
+  font-size: 20px;
+  color: #ff4081;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Snow animation */
+@keyframes snowflakes {
+  0% { top: -10px; }
+  100% { top: 100vh; }
+}
+
+.snow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-size: 25px;
+  color: white;
+  animation: snowflakes 10s linear infinite;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Snowflake Styling */
+.snow:before {
+  content: "❄";
+  animation-duration: 10s;
+}
+
+#finishButton {
+  background-color: #ff4081;
+  font-size: 20px;
+}
+
+/* Animated background for snow */
+body.snowy {
+  background-color: #1e1e1e;
+  overflow: hidden;
+}
